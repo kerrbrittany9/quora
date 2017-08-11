@@ -1,3 +1,12 @@
+#planning :
+
+index page: 1. question: question, author, notes
+            2. answer: content and answer
+            3. add and edit questions on this page
+dynamic route from index: 1. click on individual question to view details and comments
+                          2. add answers on this page. 
+
+
 # quora
 
 This README outlines the details of collaborating on this Ember application.
