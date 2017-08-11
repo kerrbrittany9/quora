@@ -1,5 +1,31 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<header class="jumbotron nav">
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <img src=<img src="https://1.allegroimg.com/s400/012688/e64bb676491eb7209ab255302211" alt="ball" id='ball'>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto list-unstyled">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img  src="https://wantoo.io/static/landingpage/img/icon_facebook.svg" alt="facebook" id='facebook'></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="http://downloadicons.net/sites/default/files/twitter-icon-62318.png" alt="twitter" id='twitter'></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="https://images.vexels.com/media/users/3/131766/isolated/preview/94f495f92a4b9aa1e7714db80856358e-pinterest-flat-icon-by-vexels.png" alt="pinterest" id='pinterest'></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="http://www.tayyabs.co.uk/img/instagram.png" alt="instagram" id='insta'></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
 {{outlet}}
+<div class="container">
+  <footer>
+    <hr>
+    Copyright MAGIC * BALL 2017
+    {{#link-to 'about'}}About{{/link-to}} |
+    {{#link-to 'index'}}Home{{/link-to}}
+  </footer>
+</div>
