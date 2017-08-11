@@ -14,6 +14,16 @@ actions: {
     });
     shake.save();
     this.transitionTo('shake');
-    }
+  },
+
+  saveResponse(params) {
+     var newResponse = this.store.createRecord('response', params);
+     var shake = params.shake;
+     shake.get('responses').addObject(newResponse);
+     newResponse.save().then(function() {
+       return shake.save();
+     });
+     this.transitionTo('shake', shake);
+   }
   }
 });
