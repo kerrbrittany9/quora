@@ -13,6 +13,10 @@
   }],
 
   "responses": [{
-
+    "answer": "you use a link in handlebars",
+    "writer": "freddy"
+  }, {
+    "answer": "problem solving, sense of accomplishment, working alone or on teams, working on cool projects, life long learning",
+    "writer": "james"
     }]
   }
