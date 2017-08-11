@@ -10,7 +10,7 @@ export default Ember.Component.extend({
        var params = {
          answer: this.get('answer'),
          writer: this.get('writer'),
-         shake: this.get('shake')
+         shake: this.get('shake'),
        };
        this.set('addNewResponse', false);
        this.sendAction('saveResponse', params);
