@@ -1,0 +1,25 @@
+{{#if addNewShake}}
+  <h1>New Shake</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="question">enter your question</label>
+        {{input value=question id="question"}}
+      </div>
+
+      <div class="form-group">
+        <label for="author">enter your name</label>
+        {{input value=author id="author"}}
+      </div>
+
+      <div class="form-group">
+        <label for="notes">additional notes..?</label>
+        {{input value=notes id="notes"}}
+      </div>
+
+      <button {{action 'saveShake'}}>Shake the Magic Ball</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'shakeFormShow'}}>New Shake</button>
+{{/if}}
