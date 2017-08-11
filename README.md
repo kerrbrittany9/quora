@@ -1,19 +1,6 @@
-#planning :
+# Quora
 
-index page: 1. question: question, author, notes
-            2. answer: content and answer
-            3. add and edit questions on this page
-dynamic route from index: 1. click on individual question to view details and comments
-                          2. add answers on this page.
-models: 1. shakes(i.e. questions): attr: question, author, notes
-        2. answers: attr: answer and author
-
-
-
-# quora
-
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This Ember application is a practice with one-to-many relationships. The user enters a question regarding web development, to which any amount of users can add a response. The user can update their response or update the query. 
 
 ## Prerequisites
 

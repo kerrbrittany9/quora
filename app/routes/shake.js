@@ -6,6 +6,12 @@ export default Ember.Route.extend({
 },
 
 actions: {
+  saveShake(params) {
+    var newShake = this.store.createRecord('shake', params);
+    newShake.save();
+    this.transitionTo('shake');
+  },
+  
   update(shake, params) {
     Object.keys(params).forEach(function(key) {
       if(params[key]!==undefined) {
@@ -17,14 +23,15 @@ actions: {
   },
 
   saveResponse(params) {
-     var newResponse = this.store.createRecord('response', params);
-     var shake = params.shake;
-     shake.get('responses').addObject(newResponse);
-     newResponse.save().then(function() {
-       return shake.save();
-     });
-     this.transitionTo('shake', shake);
-   },
+      var newResponse = this.store.createRecord('response', params);
+      var shake = params.shake;
+      shake.get('responses').addObject(newResponse);
+      newResponse.save().then(function() {
+        return shake.save();
+      });
+      this.transitionTo('shake', shake);
+    },
+
     update(response, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
