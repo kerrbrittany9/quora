@@ -1,9 +1,10 @@
 {{shake.author}} asks the Magic 8 Ball:
-{{shake.question}}
+{{shake.question}}<br>
+{{shake.notes}}
 
 <h3>Answers</h3>
 <ul>
-  {{#each shake.response as |response|}}
-   {{response-tile response=response}}
+  {{#each shake.responses as |response|}}
+   {{response-tile response=response update="update"}}
  {{/each}}
 </ul>

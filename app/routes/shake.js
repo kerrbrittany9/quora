@@ -24,6 +24,15 @@ actions: {
        return shake.save();
      });
      this.transitionTo('shake', shake);
-   }
+   },
+    update(response, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          response.set(key,params[key]);
+        }
+      });
+      response.save();
+      this.transitionTo('shake');
+    }
   }
 });
