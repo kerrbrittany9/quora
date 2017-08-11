@@ -6,6 +6,12 @@ export default Ember.Component.extend({
     updateShakeForm() {
       this.set('updateShakeForm', true);
     },
+    
+    saveShake(params) {
+      var newShake = this.store.createRecord('shake', params);
+      newShake.save();
+      this.transitionTo('shake');
+    },
 
     update(shake) {
       var params = {

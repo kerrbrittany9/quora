@@ -1,5 +1,5 @@
 {{#if updateShakeForm}}
-  <h3>edit {{shake.author}}'s shake</h3>
+  <h3>Edit {{shake.author}}'s shake</h3>
   <div>
     <form>
       <div class="form-group">
@@ -17,9 +17,9 @@
         {{input value=notes id="notes"}}
       </div>
 
-      <button {{action 'update' shake}}>shake update</button>
+      <button {{action 'update' shake}}>Shake Update</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'updateShakeForm'}}>update Shake</button>
+  <button {{action 'updateShakeForm'}}>Update Shake</button>
 {{/if}}
