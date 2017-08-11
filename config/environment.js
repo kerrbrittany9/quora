@@ -19,10 +19,10 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "AIzaSyAdrTwr6zI5IC2C0kVXS8-v-3pdUzjzyoA",
-      authDomain: "magic-8-ball-56e38.firebaseapp.com",
-      databaseURL: "https://magic-8-ball-56e38.firebaseio.com",
-      storageBucket: "magic-8-ball-56e38.appspot.com"
+      apiKey: "AIzaSyBUPFDHGD-qj36OQ5524U1sEAEg4Afs57E",
+      authDomain: "quora-2ffd2.firebaseapp.com",
+      databaseURL: "https://quora-2ffd2.firebaseio.com",
+      storageBucket: "quora-2ffd2.appspot.com"
     },
 
     APP: {
