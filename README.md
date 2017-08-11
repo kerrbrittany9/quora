@@ -4,7 +4,10 @@ index page: 1. question: question, author, notes
             2. answer: content and answer
             3. add and edit questions on this page
 dynamic route from index: 1. click on individual question to view details and comments
-                          2. add answers on this page. 
+                          2. add answers on this page.
+models: 1. shakes(i.e. questions): attr: question, author, notes
+        2. answers: attr: answer and author
+
 
 
 # quora

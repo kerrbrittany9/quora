@@ -1,0 +1,18 @@
+{ "shakes" : [{
+  "question": "How do I notate a variable in JS?",
+  "author": "Sam",
+  "notes": "good question"
+}, {
+  "question": "Are CSS color names really color names?",
+  "author": "Tammy",
+  "notes": "deep thoughts by jack handy"
+}, {
+  "question": "What are the best things about being a developer?",
+  "author": "Saray",
+  "notes": "list five at least"
+  }],
+
+  "responses": [{
+
+    }]
+  }
